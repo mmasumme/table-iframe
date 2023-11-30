@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table & Iframe</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <h1>Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Flavors</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+          </tr>
+          <tr>
+            <td>Mango</td>
+          </tr>
+          <tr>
+            <td>Chocolate</td>
+          </tr>
+          <tr>
+            <td colspan="2">These are exclusive flavors</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="iframe">
+      <h2>This is YouTube Video</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HAx9AKhNvNI?si=YECyn5JOXUEvUijM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
